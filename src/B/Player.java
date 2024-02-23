@@ -1,7 +1,8 @@
 package B;
 
 public class Player {
-    int x,y;
+    private int x;
+    private int y;
 
     public int getX() {
         return x;

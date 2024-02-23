@@ -19,50 +19,50 @@ public class FechaTest {
     private Fecha diaMalFebreroBisiesto2 = new Fecha (29, 2, 1900);
     @Test
     public void testValidaCP01() {
-        assertTrue(fechaCorrecta.valida());
+        assertTrue(fechaCorrecta.fechaValida());
     }
     @Test
     public void testValidaCP02() {
-        assertFalse(mesMal1.valida());
+        assertFalse(mesMal1.fechaValida());
     }
     @Test
     public void testValidaCP03() {
-        assertFalse(mesMal2.valida());
+        assertFalse(mesMal2.fechaValida());
     }
     @Test
     public void testValidaCP04() {
-        assertFalse(diaMal1.valida());
+        assertFalse(diaMal1.fechaValida());
     }
     @Test
     public void testValidaCP05() {
-        assertFalse(diaMal2.valida());
+        assertFalse(diaMal2.fechaValida());
     }
     @Test
     public void testValidaCP06() {
-        assertFalse(diaMalNoviembre.valida());
+        assertFalse(diaMalNoviembre.fechaValida());
     }
     @Test
     public void testValidaCP07() {
-        assertTrue(diaBienDiciembre.valida());
+        assertTrue(diaBienDiciembre.fechaValida());
     }
     @Test
     public void testValidaCP08() {
-        assertFalse(diaMalFebrero.valida());
+        assertFalse(diaMalFebrero.fechaValida());
     }
     @Test
     public void testValidaCP09() {
-        assertTrue(diaBienFebreroBisiesto1.valida());
+        assertTrue(diaBienFebreroBisiesto1.fechaValida());
     }
     @Test
     public void testValidaCP10() {
-        assertTrue(diaBienFebreroBisiesto2.valida());
+        assertTrue(diaBienFebreroBisiesto2.fechaValida());
     }
     @Test
     public void testValidaCP11() {
-        assertFalse(diaMalFebreroBisiesto1.valida());
+        assertFalse(diaMalFebreroBisiesto1.fechaValida());
     }
     @Test
     public void testValidaCP12() {
-        assertFalse(diaMalFebreroBisiesto2.valida());
+        assertFalse(diaMalFebreroBisiesto2.fechaValida());
     }
 }
